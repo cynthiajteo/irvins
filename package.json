@@ -1,0 +1,28 @@
+{
+  "name": "irvins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynthiajteo/irvins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cynthiajteo/irvins/issues"
+  },
+  "homepage": "https://github.com/cynthiajteo/irvins#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.6.11",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
+  }
+}
