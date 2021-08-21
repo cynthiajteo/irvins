@@ -35,12 +35,6 @@ router.post('/', async (req, res) => {
     });
 
     try {
-        const checkProduct = await Product.findOne({ id: req.body.id });
-
-        if (checkProduct) {
-            throw new Error('product exists');
-        }
-
         const newProduct = await product.save();
         res.status(201).json(newProduct);
     } catch (err) {

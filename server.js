@@ -9,6 +9,13 @@ require('dotenv').config();
 const PORT = process.env.PORT || 4000;
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017';
 
+const cors = require('cors');
+const corsOptions = {
+    origin: '*',
+    credentials: true,
+    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
+};
+
 // controllers
 const productController = require('./controllers/products');
 
@@ -17,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
+app.use(cors(corsOptions));
 
 // database
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
