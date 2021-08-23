@@ -35,6 +35,10 @@ input {
     justify-content: space-between;
 }
 
+.add-form {
+    padding-bottom: 1.5em;
+}
+
 #submit-btn {
     background: rgb(202, 255, 255);
     color: blue;

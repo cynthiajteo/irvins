@@ -42,9 +42,9 @@ function AddProduct() {
 
     return (
         <Container>
-            <Row className='justify-content-center text-center'>
+            <Row className='justify-content-center text-center add-form'>
                 <h1>Add Product</h1>
-                <Col md={6}>
+                <Col md={8}>
                     <Form onSubmit={onSubmit}>
                         <div className='form-floating lg-2'>
                             <Row>
